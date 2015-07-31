@@ -1,13 +1,13 @@
 angular.module('userProfiles')
-.controller('mainController', function($scope, mainService){
 
-	$scope.getUsers = function() {
-		$scope.users = mainService.getUsers();
-	}
+	.controller('mainController', function($scope, mainService){
 
-	$scope.getUsers()
+		$scope.getUsers = function() {
+			$scope.users = mainService.getUsers();
+		}
 
-	console.log($scope.users)
-	
-})	
+		$scope.getUsers()
 
+		console.log($scope.users)
+		
+	})	
